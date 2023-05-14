@@ -1,4 +1,5 @@
 const container = document.querySelector(".container");
+const display= document.querySelector(".display-container")
 
 const url="https://dogapi.dog/api/facts?number=5"
 
@@ -33,11 +34,13 @@ async function getuserdate(url) {
 
 function updateProfile(data){
 
-    data1.innerText =`${data.facts[0]}`
-    data2.innerText =`${data.facts[1]}`
-    data3.innerText =`${data.facts[2]}`
-    data4.innerText =`${data.facts[3]}`
-    data5.innerText =`${data.facts[4]}`
+    
+
+    data1.innerText =`1) ${data.facts[0]}`
+    data2.innerText =`2) ${data.facts[1]}`
+    data3.innerText =`3) ${data.facts[2]}`
+    data4.innerText =`4) ${data.facts[3]}`
+    data5.innerText =`5) ${data.facts[4]}`
     
 }
 
